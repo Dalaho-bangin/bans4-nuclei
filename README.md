@@ -1,2 +1,2 @@
 # bans4-nuclei
-Nuclei templates for Bans4
+Custom Nuclei templates for bans4
