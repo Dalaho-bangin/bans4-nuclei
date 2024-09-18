@@ -20,9 +20,9 @@ requests:
 
         {"app_id":"20","email":"test@example.com'; waitfor delay '0:0:7' -- ","appHost":"https://{{Hostname}}/ia"}
 
+    matchers-condition: and
     matchers:
       - type: dsl
         dsl:
-          - 'duration>=6'
+          - 'duration>=7 && duration<=8'
           - 'status_code == 400'
-        condition: and
