@@ -25,4 +25,12 @@ requests:
       - type: dsl
         dsl:
           - 'duration>=7 && duration<=8'
-          - 'status_code == 400'
+
+      - type: status
+        status:
+          - 400
+
+      - type: word
+        part: header
+        words:
+          - "Request-Context: appId="
